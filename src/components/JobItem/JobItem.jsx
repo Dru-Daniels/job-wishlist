@@ -27,9 +27,11 @@ class JobItem extends React.Component {
   }
 
   render() {
-    const { item, handleDelete } = this.props
+    const { item } = this.props
 
-    let logoUrl = `https://logo.uplead.com/${item.company.toLowerCase()}.com`
+    let logoUrl = `https://logo.uplead.com/${item.company
+      .replace(/ /g, "")
+      .toLowerCase()}.com`
     return (
       <div
         className="list"
