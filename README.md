@@ -6,5 +6,3 @@
 ![Image of Game](/public/assets/wish.png)
 
 [GitHub Repo](https://github.com/Dru-Daniels/job-wishlist/)
-
-Thank you!
