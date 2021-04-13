@@ -1,0 +1,101 @@
+.popup-content {
+  background: none;
+  border: none;
+  box-shadow:none;
+
+}
+
+.popup-arrow {
+  color: transparent;
+  box-shadow:none;
+  stroke: none;
+}
+
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: none;
+}
+
+.job-list-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 310px;
+  width: 375px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  color:#241b53;
+  padding-bottom: 15px;
+}
+
+.job-form-title {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 3px 3px 3px #0003,
+              -3px -3px 3px #fff6;
+}
+
+.wishlist-container {
+  margin: 2rem auto 4rem;
+  padding:0 3% 3rem 3%;
+  width: 400px;
+  min-height: 600px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 13px #0002,
+              -10px -10px 13px #fff7;
+  transition: all 0.3s ease 0s;
+}
+
+.wishlist-container p {
+  color: #241b53;
+}
+
+.icon {
+  position: absolute;
+  right: 1rem;
+  top: 1.3rem;
+  color: #cbc6d5;
+}
+
+.add-btn {
+  margin-bottom: 1rem;
+  width: 325px;
+  font-size: 2rem;
+  font-weight: 900;
+  color:#cbc6d5;
+  background-color: transparent;
+  border:none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: -3px -3px 5px #fff7,
+              5px 5px 5px #0002;
+  transition: all 0.3s ease 0s;
+}
+
+.add-btn:hover {
+  color: #fff;
+  background-color: hsl(260, 15%, 76%);
+}
+
+.faMagic {
+  filter: drop-shadow(3px 3px 3px #0003);
+}
+
+.uplead-link {
+  position: absolute; 
+  bottom: 5px;
+  text-decoration: none;
+  color: #cbc6d5;
+}

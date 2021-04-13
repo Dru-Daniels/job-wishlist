@@ -1,0 +1,55 @@
+#job-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#job-form input {
+  background-color: #fff;
+  border: 1.5px solid #cbc6d5;
+  width: 250px;
+  height: 45px;
+  border-radius: 5px;
+  margin: 5px auto;
+  padding: 0 20px;
+  color: hsl(260, 15%, 41%);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+#job-form input::placeholder {
+  color: #cbc6d5;
+}
+
+#job-form input:focus {
+  outline: none;
+  border: 1.5px solid #241b53;
+}
+
+#job-form button {
+  background-color: #241b53;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  width: 292px;
+  height: 45px;
+  border-radius: 8px;
+  margin-top: 15px;
+  outline: none;
+  box-shadow: -3px -3px 5px #fff7,
+              5px 5px 5px rgba(0, 0, 0, .1);
+  transition: all 0.7s ease 0s;
+}
+
+#job-form button:hover, .add-btn:hover {
+  color:#cbc6d5;
+  background-color: transparent;
+  border:none;
+  outline: none;
+  transition: all 0.3s ease 0s;
+}
+
+.job-form-input-container {
+  position: relative;
+}

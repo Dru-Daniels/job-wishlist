@@ -1,0 +1,135 @@
+
+.list {
+  color: #fff;
+  width: 300px;
+  height: 110px;
+  background-color: #8fb1df;
+  padding: .75rem;
+  padding-bottom: 0rem;
+  margin: .5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 3px 5px darkgrey;
+}
+
+.list-time {
+  align-self: flex-end;
+  font-size: 12px;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5rem;
+}
+
+.list-content-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.list-text p {
+  margin: 0;
+  padding-left: .75rem;
+  font-weight: 500;
+  opacity: .8;
+  text-transform: capitalize;
+}
+
+#list-company {
+  font-size: 1.25rem;
+  padding-bottom: .5rem;
+  opacity: 1;
+}
+
+.trash-icon {
+  opacity: 0;
+  justify-self: flex-end;
+  transition: all 0.3s ease 0s;
+}
+
+.img-wrapper {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.list img {
+  width: auto;
+  height: 30px;
+  overflow: hidden;
+}
+
+.list:hover {
+  .trash-icon {
+    opacity: 1;
+    color: #241b53;
+  }
+  .trash-icon:hover {
+    opacity: .9;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+#active {
+  animation: del .3s linear;
+}
+
+@keyframes del {
+  to {
+    opacity: 0;
+    transform: rotateY(145deg) skew(15deg) scale(0.5);
+  }
+}
+
+.pop-confirm {
+  position: fixed;
+  bottom: 0%;
+  left: 2%;
+  padding: 16px;
+}
+
+.pop-confirm h4 {
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.popconfirm-button {
+  background-color: #241b53;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  width: 292px;
+  height: 45px;
+  border-radius: 8px;
+  margin-top: 2rem;
+  outline: none;
+  box-shadow: -3px -3px 5px #fff7,
+              5px 5px 5px rgba(0, 0, 0, .1);
+  transition: all 0.7s ease 0s;
+}
+
+.popconfirm-button:hover, .popconfirm-button-accent {
+  color:#cbc6d5;
+  background-color: transparent;
+  border:none;
+  outline: none;
+  transition: all 0.3s ease 0s;
+}
+
+.popconfirm-button-accent:hover {
+  background-color: #241b53;
+  color: #fff;
+  transition: all 0.7s ease 0s;
+}
