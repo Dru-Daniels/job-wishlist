@@ -1,28 +1,23 @@
 import React from "react";
 
-import JobItem from '../JobItem/JobItem'
+import JobItem from "../JobItem/JobItem";
 
-import './ListItems.scss'
+import "./ListItems.scss";
 
-class ListItems extends React.Component {
-  render() {
-    const { items, onDelete } = this.props;
-    const listItems = items.map((item, index) => {
-      return (
-        <JobItem
-          key={item.key}
-          item={item}
-          handleDelete={() => { onDelete(index) }}
-        />
-      )
-    })
-
+const ListItems = ({ items, onDelete }) => {
+  const listItems = items.map((item, index) => {
     return (
-      <div className='list-items'>
-        {listItems}
-      </div>
-    )
-  }
-}
+      <JobItem
+        key={item.key}
+        item={item}
+        handleDelete={() => {
+          onDelete(index);
+        }}
+      />
+    );
+  });
 
-export default ListItems
+  return <div className="list-items">{listItems}</div>;
+};
+
+export default ListItems;
